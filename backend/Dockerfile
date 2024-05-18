@@ -14,8 +14,8 @@ RUN pip freeze > requirements.txt
 RUN pip3 install -r requirements.txt
 
 # Run database migrations
-RUN python manage.py makemigrations
-RUN python manage.py migrate
+#RUN python manage.py makemigrations
+#RUN python manage.py migrate
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
