@@ -4,6 +4,7 @@ FROM node:14-alpine AS builder
 
 WORKDIR /opt/web
 COPY . ./
+COPY package*.json ./
 RUN npm install
 
 ENV PATH="./node_modules/.bin:$PATH"
