@@ -7,8 +7,6 @@ WORKDIR /app
 # Copy the contents of the backend directory into /app
 COPY . /app
 
-#Requirements
-RUN pip freeze > requirements.txt
 
 # Install any needed packages specified in requirements.txt
 RUN pip3 install -r requirements.txt
