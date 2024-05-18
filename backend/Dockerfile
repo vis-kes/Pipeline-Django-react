@@ -9,7 +9,7 @@ COPY . /app
 
 
 # Install any needed packages specified in requirements.txt
-RUN pip3 install -r backend\requirements.txt
+RUN pip3 install -r backend/requirements.txt
 
 # Run database migrations
 RUN python backend\manage.py makemigrations
