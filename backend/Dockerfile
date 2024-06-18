@@ -12,7 +12,7 @@ COPY . /app
 RUN pip3 install -r backend/requirements.txt
 
 # Run database migrations
-RUN python /backend/manage.py makemigrations
+RUN python /github action/Pipeline-Django-react/backend/manage.py makemigrations
 RUN python manage.py migrate
 
 # Make port 8000 available to the world outside this container
